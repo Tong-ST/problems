@@ -10,7 +10,7 @@ def exists():
 
 @check50.check(exists)
 def test_3_over_4():
-    """input of 3/4 yields output of 75%"""
+    """input of 3/4 ต้องมี output คือ 75%"""
     input = "3/4"
     output = "75%"
     check50.run("python3 fuel.py").stdin(input, prompt=True).stdout(regex(output), output, regex=True).exit()
